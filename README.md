@@ -163,23 +163,28 @@ cd backend
 
 The project includes a multi-stage [Dockerfile](file:///c:/Users/Mahi/Desktop/RPL%20SIH/Dockerfile) and [render.yaml](file:///c:/Users/Mahi/Desktop/RPL%20SIH/render.yaml) blueprint that packages the React frontend and FastAPI backend into a **single, unified service** with automatic SQLite data seeding.
 
-### Option A: Render (Free Tier — Recommended)
-1. Push this repository to your GitHub account:
-   ```powershell
-   git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-   git push -u origin main
-   ```
-2. Log into [Render Dashboard](https://dashboard.render.com/) with GitHub.
-3. Click **New +** > **Web Service** and choose your repository.
-4. Render will auto-detect the `Dockerfile` (or `render.yaml`).
-5. Click **Deploy**. In ~2 minutes, your single live prototype link (`https://...onrender.com`) will be active.
+### 1-Click Instant Cloud Deployment
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/MahiQureshi/RPL-SIH-PORTAL)
 
-### Option B: Railway
-1. Go to [Railway](https://railway.app/) and click **New Project** > **Deploy from GitHub repo**.
-2. Select your repository. Railway automatically builds the Dockerfile and generates a public HTTPS link.
+Click the button above or visit:
+👉 **https://render.com/deploy?repo=https://github.com/MahiQureshi/RPL-SIH-PORTAL**
+
+### Option A: Render Dashboard (Manual Free Web Service)
+1. Repository is live on GitHub: **[github.com/MahiQureshi/RPL-SIH-PORTAL](https://github.com/MahiQureshi/RPL-SIH-PORTAL)**
+2. Go to [Render Dashboard](https://dashboard.render.com/) and sign in with GitHub.
+3. Click **New +** > **Web Service**.
+4. Select `MahiQureshi/RPL-SIH-PORTAL`.
+5. Render auto-detects `Dockerfile` and `render.yaml`. Click **Deploy Web Service**.
+6. In ~2 minutes, your live prototype link (e.g. `https://rpl-sih-assessment-portal.onrender.com`) will be active.
+
+### Option B: Railway (Alternative 1-Click)
+1. Go to [Railway.app](https://railway.app/) and sign in with GitHub.
+2. Click **New Project** > **Deploy from GitHub repo** > select `MahiQureshi/RPL-SIH-PORTAL`.
+3. Railway automatically builds the container and provides a public HTTPS link under **Settings > Networking**.
 
 ### Features of the Unified Deployment:
 - **Zero CORS Issues:** Frontend SPA and `/api` are served from the same domain.
 - **Auto-Seeded Demo Database:** Ramesh Kumar (Worker), Priya Sharma (Assessor), Sanjay Gupta (Admin), and all NCVET qualification packs work out of the box immediately on cold start.
 - **Client-Side SPA Routing:** Direct navigation to `/worker`, `/assessor`, and `/admin` works seamlessly.
+
 
