@@ -1,0 +1,67 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  line-height: 1;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.badge-sm {
+  padding: 3px 8px;
+  font-size: var(--text-xs);
+}
+
+.badge-md {
+  padding: 5px 12px;
+  font-size: var(--text-xs);
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Badge Variants */
+.badge-sky {
+  background: var(--color-sky-blue-light);
+  color: var(--color-sky-blue);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.badge-emerald {
+  background: var(--color-emerald-light);
+  color: var(--color-emerald-bright);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.badge-gold {
+  background: var(--color-gold-light);
+  color: var(--color-gold-bright);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.badge-crimson {
+  background: var(--color-crimson-light);
+  color: var(--color-crimson-bright);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.badge-neutral {
+  background: var(--badge-bg-neutral);
+  color: var(--badge-text-neutral);
+  border-color: var(--border-subtle);
+}
+
+.badge-nsqf {
+  background: linear-gradient(135deg, rgba(212, 167, 44, 0.2) 0%, rgba(56, 189, 248, 0.15) 100%);
+  color: var(--color-muted-gold);
+  border: 1px solid rgba(212, 167, 44, 0.4);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}

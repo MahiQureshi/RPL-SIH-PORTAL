@@ -1,0 +1,302 @@
+.report-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6) 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.report-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+/* Document Sheet (mimics A4 official certificate) */
+.report-sheet {
+  background: var(--surface-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Header */
+.report-header-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: var(--space-6);
+  border-bottom: 2px solid var(--border-subtle);
+  margin-bottom: var(--space-6);
+}
+
+.report-emblem-section {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.report-main-title {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+}
+
+.report-sub-title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-sky-blue);
+  letter-spacing: 0.3px;
+  margin-top: 2px;
+}
+
+.report-statutory-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.report-dossier-id {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: var(--bg-secondary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Profile grid */
+.report-profile-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+@media (min-width: 640px) {
+  .report-profile-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-label {
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-data-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.data-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+}
+
+.data-label {
+  color: var(--text-muted);
+}
+
+.data-val {
+  color: var(--text-primary);
+}
+
+/* Outcome Box */
+.report-outcome-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-top: var(--space-6);
+  gap: var(--space-4);
+}
+
+.outcome-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.outcome-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.outcome-val {
+  font-size: var(--text-lg);
+  font-weight: 800;
+}
+
+/* Criteria table */
+.report-criteria-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-xs);
+  margin-top: var(--space-3);
+}
+
+.report-criteria-table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 700;
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-subtle);
+}
+
+.report-criteria-table td {
+  padding: var(--space-3);
+  border: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.assessor-note-inline {
+  font-size: 11px;
+  color: var(--color-sky-blue);
+  background: var(--color-sky-blue-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+/* Gaps */
+.gaps-content-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-4);
+  background: var(--bg-secondary);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+}
+
+@media (min-width: 640px) {
+  .gaps-content-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.report-bullets {
+  list-style: disc;
+  padding-left: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+/* Sign-off */
+.sign-off-dossier-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  background: var(--surface-card);
+  gap: var(--space-4);
+}
+
+.sign-off-details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.decision-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.decision-text {
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-emerald-bright);
+}
+
+.decision-notes-text {
+  font-size: var(--text-xs);
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.assessor-signature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: var(--space-6);
+  border-left: 1px solid var(--border-subtle);
+}
+
+.signature-line {
+  border-bottom: 1px solid var(--text-muted);
+  width: 140px;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.signature-font {
+  font-family: 'Brush Script MT', cursive, sans-serif;
+  font-size: 20px;
+  color: var(--color-sky-blue);
+}
+
+.sign-name {
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.sign-meta {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+/* Statutory Notice */
+.report-statutory-disclaimer {
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-4);
+}
+
+/* Print CSS media query */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print, header {
+    display: none !important;
+  }
+  .report-sheet {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}

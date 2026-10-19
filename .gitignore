@@ -1,0 +1,35 @@
+# Python
+venv/
+*/venv/
+__pycache__/
+*/__pycache__/
+*/**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# Node / Frontend
+node_modules/
+*/node_modules/
+frontend/dist/
+dist/
+dist-ssr/
+*.local
+
+# SQLite Database (auto-generated & auto-seeded on deployment startup)
+*.db
+*.sqlite3
+
+# Evidence storage (keep demo files for live demo)
+backend/storage/evidence/*
+!backend/storage/evidence/demo_loto_ppe.jpg
+!backend/storage/evidence/demo_megger_reading.jpg
+!backend/storage/evidence/.gitkeep
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

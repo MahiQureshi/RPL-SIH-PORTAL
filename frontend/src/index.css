@@ -1,0 +1,13 @@
+@import './styles/globals.css';
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-wrapper {
+  flex: 1;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-12);
+}

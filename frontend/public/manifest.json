@@ -1,0 +1,16 @@
+{
+  "short_name": "RPL Skill Tool",
+  "name": "AI-Assisted Skill Assessment Tool for Recognition of Prior Learning",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0B1220",
+  "theme_color": "#0B1220",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}

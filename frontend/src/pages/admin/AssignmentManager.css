@@ -1,0 +1,48 @@
+.assignment-manager-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-6) 0;
+}
+
+.assignments-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--text-xs);
+}
+
+.assignments-table th {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  padding: var(--space-3) var(--space-4);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.assignments-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.assignments-table tr:hover {
+  background: var(--surface-hover);
+}
+
+.space-y-3 > * + * {
+  margin-top: var(--space-3);
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-3 {
+  gap: var(--space-3);
+}
+
+.pt-3 {
+  padding-top: var(--space-3);
+}

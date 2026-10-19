@@ -1,0 +1,197 @@
+.matches-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-6) 0;
+}
+
+.matches-header {
+  max-width: 800px;
+}
+
+.matches-title {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.matches-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Primary Card */
+.primary-card-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.primary-qp-name {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.primary-card-sub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.relevance-score-badge {
+  text-align: right;
+  background: var(--surface-card);
+  border: 1px solid var(--border-strong);
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 15px var(--color-sky-blue-light);
+}
+
+.score-number {
+  font-size: var(--text-2xl);
+  font-weight: 900;
+  color: var(--color-sky-blue);
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Match Reasons */
+.match-reasons-box {
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--color-muted-gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.box-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.reasons-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Mapped NOS Grid */
+.mapped-nos-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .mapped-nos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nos-item-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.nos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.nos-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-sky-blue);
+}
+
+.nos-match-badge {
+  font-size: 9px;
+  font-weight: 700;
+  background: var(--color-emerald-light);
+  color: var(--color-emerald-bright);
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+}
+
+.nos-title {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* Skill Gaps */
+.skill-gaps-box {
+  background: var(--color-crimson-light);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.gaps-list {
+  list-style: disc;
+  padding-left: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.nqr-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--color-sky-blue);
+  text-decoration: underline;
+}
+
+/* Transparency disclaimer */
+.transparency-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+.mt-10 { margin-top: var(--space-10); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
