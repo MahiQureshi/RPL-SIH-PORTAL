@@ -156,3 +156,30 @@ cd backend
    - Open **Assignment Manager** to schedule new candidate evaluations.
    - Open **Audit Trail** to show the immutable log of all actions.
    - Open **Offline Sync Center** to show IndexedDB cache management.
+
+---
+
+## 8. 1-Click Online Cloud Deployment (Single Working Prototype Link)
+
+The project includes a multi-stage [Dockerfile](file:///c:/Users/Mahi/Desktop/RPL%20SIH/Dockerfile) and [render.yaml](file:///c:/Users/Mahi/Desktop/RPL%20SIH/render.yaml) blueprint that packages the React frontend and FastAPI backend into a **single, unified service** with automatic SQLite data seeding.
+
+### Option A: Render (Free Tier — Recommended)
+1. Push this repository to your GitHub account:
+   ```powershell
+   git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
+   git push -u origin main
+   ```
+2. Log into [Render Dashboard](https://dashboard.render.com/) with GitHub.
+3. Click **New +** > **Web Service** and choose your repository.
+4. Render will auto-detect the `Dockerfile` (or `render.yaml`).
+5. Click **Deploy**. In ~2 minutes, your single live prototype link (`https://...onrender.com`) will be active.
+
+### Option B: Railway
+1. Go to [Railway](https://railway.app/) and click **New Project** > **Deploy from GitHub repo**.
+2. Select your repository. Railway automatically builds the Dockerfile and generates a public HTTPS link.
+
+### Features of the Unified Deployment:
+- **Zero CORS Issues:** Frontend SPA and `/api` are served from the same domain.
+- **Auto-Seeded Demo Database:** Ramesh Kumar (Worker), Priya Sharma (Assessor), Sanjay Gupta (Admin), and all NCVET qualification packs work out of the box immediately on cold start.
+- **Client-Side SPA Routing:** Direct navigation to `/worker`, `/assessor`, and `/admin` works seamlessly.
+
